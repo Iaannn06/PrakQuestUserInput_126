@@ -5,8 +5,18 @@ import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.res.stringArrayResource
+import  androidx.compose.ui.graphics.Color
 
+val purpleGradient = Brush.verticalGradient(
+    colors = listOf(
+        Color(0xFF6A1B9A), //
+        Color(0xFF8E24AA), //
+        Color(0xFFAB47BC)  //
+    )
+)
 @Composable
 fun RegistrationScreen() {
     var textNama by remember { mutableStateOf("") }
@@ -22,4 +32,9 @@ fun RegistrationScreen() {
     val genderOptions = stringArrayResource(R.array.gender_options)
     val statusOptions = stringArrayResource(R.array.status_options)
 
+
+
+
+
 }
+
