@@ -118,6 +118,14 @@ fun RegistrationScreen() {
                             submittedGender = selectedGender
                             submittedStatus = selectedStatus
                         },
+                        modifier = Modifier.fillMaxWidth(),
+                        shape = RoundedCornerShape(8.dp),
+                        colors = ButtonDefaults.buttonColors(
+                            containerColor = Color(0xFF673AB7) // Warna ungu tombol
+                        )
+                    ){
+
+                    }
                 }
             }
         }
