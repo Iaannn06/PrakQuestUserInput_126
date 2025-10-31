@@ -117,6 +117,7 @@ fun RegistrationScreen() {
                         singleLine = true,
                         shape = RoundedCornerShape(8.dp)
                     )
+                    Spacer(modifier = Modifier.height(24.dp))
 
                 }
             }
