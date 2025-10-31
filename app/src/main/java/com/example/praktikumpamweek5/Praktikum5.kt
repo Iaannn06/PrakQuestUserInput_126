@@ -110,7 +110,14 @@ fun RegistrationScreen() {
                         shape = RoundedCornerShape(8.dp)
                     )
                     Spacer(modifier = Modifier.height(24.dp))
-
+                    Button(
+                        onClick = {
+                            // Simpan data ke state 'submitted'
+                            submittedNama = textNama
+                            submittedAlamat = textAlamat
+                            submittedGender = selectedGender
+                            submittedStatus = selectedStatus
+                        },
                 }
             }
         }
