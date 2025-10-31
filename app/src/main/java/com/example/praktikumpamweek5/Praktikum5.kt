@@ -124,7 +124,7 @@ fun RegistrationScreen() {
                             containerColor = Color(0xFF673AB7) // Warna ungu tombol
                         )
                     ){
-
+                        Text(text = stringResource(R.string.button_submit))
                     }
                 }
             }
