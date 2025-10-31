@@ -1,5 +1,8 @@
 package com.example.praktikumpamweek5
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -32,9 +35,12 @@ fun RegistrationScreen() {
     val genderOptions = stringArrayResource(R.array.gender_options)
     val statusOptions = stringArrayResource(R.array.status_options)
 
+    Box(
+        modifier = Modifier
+            .fillMaxSize()
+            .background(purpleGradient)
+    ){
 
-
-
-
+    }
 }
 
