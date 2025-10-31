@@ -108,6 +108,15 @@ fun RegistrationScreen() {
                     }
                     Spacer(modifier = Modifier.height(16.dp))
 
+                    FormLabel(text = stringResource(R.string.label_alamat)) // <-- MEMANGGIL STRING
+                    OutlinedTextField(
+                        value = textAlamat,
+                        onValueChange = { textAlamat = it },
+                        placeholder = { Text(stringResource(R.string.placeholder_alamat)) }, // <-- MEMANGGIL STRING
+                        modifier = Modifier.fillMaxWidth(),
+                        singleLine = true,
+                        shape = RoundedCornerShape(8.dp)
+                    )
 
                 }
             }
